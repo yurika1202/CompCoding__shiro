@@ -1,0 +1,31 @@
+// フォーカス時にも適用し、PCのみで実行する
+// --------------------------------------------------------------------------
+@mixin hover() {
+  &:focus {
+    @content;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+// 共通hoverアニメーション
+// --------------------------------------------------------------------------
+@mixin mix_colorHover($color: $color-link, $time: 0.4s) {
+  color: $color;
+  transition: color $time ease-in-out;
+  @include hover() {
+    color: lighten($color, 15%);
+  }
+}
+
+@mixin mix_simpleHover($time: 0.4s) {
+  transition: filter $time ease-in-out;
+  @include hover() {
+    filter: brightness(130%);
+  }
+}
+

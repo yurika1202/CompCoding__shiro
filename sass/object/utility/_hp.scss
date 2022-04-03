@@ -1,0 +1,158 @@
+@use "../../variables/" as var;
+@use "../../mixins/" as mix;
+
+// hp_display
+// ----------------------------------------------------------------
+
+.hp_pcNoDisplay {
+  @include mix.mq(xl, min) {
+    display: none;
+  }
+}
+
+.hp_lgNoDisplay {
+  @include mix.mq(lg, min) {
+    display: none;
+  }
+}
+
+.hp_mdNoDisplay {
+  @include mix.mq(md, min) {
+    display: none;
+  }
+}
+
+.hp_spNoDisplay {
+  @include mix.mq(sp, min) {
+    display: none;
+  }
+}
+
+.hp_BlockDisplay {
+  @include mix.mq(md) {
+    display: block;
+  }
+}
+
+// hp_margin & padding
+// ----------------------------------------------------------------
+
+@for $i from 0 through 9 {
+  .hp_mb#{$i} {
+    margin-bottom: #{$i}em !important;
+  }
+
+  .hp_ml#{$i} {
+    margin-left: #{$i}em !important;
+  }
+
+  .hp_mr#{$i} {
+    margin-right: #{$i}em !important;
+  }
+
+  .hp_mt#{$i} {
+    margin-top: #{$i}em !important;
+  }
+
+  .hp_pb#{$i} {
+    padding-bottom: #{$i}em !important;
+  }
+
+  .hp_pl#{$i} {
+    padding-left: #{$i}em !important;
+  }
+
+  .hp_pr#{$i} {
+    padding-right: #{$i}em !important;
+  }
+
+  .hp_pt#{$i} {
+    padding-top: #{$i}em !important;
+  }
+}
+
+// margin
+// ----------------------------------------------------------------
+
+.hp_lv1Space {
+  @include mix.mix_lv1Space;
+}
+
+.hp_lv1Space_top {
+  @include mix.mix_lv1Space_top;
+}
+
+.hp_lv1Space_bottom {
+  @include mix.mix_lv1Space_bottom;
+}
+
+.hp_lv2Space {
+  @include mix.mix_lv2Space;
+}
+
+.hp_lv2Space_top {
+  @include mix.mix_lv2Space_top;
+}
+
+.hp_lv2Space_bottom {
+  @include mix.mix_lv2Space_bottom;
+}
+
+.hp_lv3Margin {
+  @include mix.mix_lv3Space;
+}
+
+.hp_lv3Margin_top {
+  @include mix.mix_lv3Space_top;
+}
+
+.hp_lv3Margin_bottom {
+  @include mix.mix_lv3Space_bottom;
+}
+
+.hp_lv4Margin {
+  @include mix.mix_lv4Space;
+}
+
+.hp_lv4Margin_top {
+  @include mix.mix_lv4Space_top;
+}
+
+.hp_lv4Margin_bottom {
+  @include mix.mix_lv4Space_bottom;
+}
+
+// font-size
+// ----------------------------------------------------------------
+
+.hp_lv1FontSize {
+  @include mix.mix_lv1FontSize;
+}
+
+.hp_lv2FontSize {
+  @include mix.mix_lv2FontSize;
+}
+
+.hp_lv3FontSize {
+  @include mix.mix_lv3FontSize;
+}
+
+.hp_lv4FontSize {
+  @include mix.mix_lv4FontSize;
+}
+
+
+// hp_txt
+// ----------------------------------------------------------------
+
+.hp_txt_c {
+  text-align: center !important;
+}
+
+.hp_txt_l {
+  text-align: left !important;
+}
+
+.hp_txt_r {
+  text-align: right !important;
+}

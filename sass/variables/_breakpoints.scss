@@ -1,0 +1,10 @@
+// Breakpoint（mixins/_responsive.scss用）
+// --------------------------------------------------------------------------
+$mq-breakpoints: (
+  xs: 0,
+  sm: 576px,  // SP
+  md: 768px,  // iPhone XS横 , iPad Pro縦
+  lg: 992px,  // タブレット縦
+  xl: 1280px,  // PC
+  xxl: 1400px
+) !default;

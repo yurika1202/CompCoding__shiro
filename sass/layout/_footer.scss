@@ -1,0 +1,95 @@
+@use "../variables/" as var;
+@use "../mixins/" as mix;
+
+.ly_pageBottom {
+  margin-top: auto;
+}
+
+.ly_footer {
+  width: 100%;
+  background: var.$color-background02;
+
+  &_pageTop {
+    position: fixed;
+    letter-spacing: 2px;
+    z-index: 99;
+
+    a {
+      position: relative;
+      display: block;
+      color: var.$color-text-default-pc;
+      text-decoration: none;
+
+      @include mix.hover() {
+        color: #999;
+      }
+    }
+  }
+
+  &_inner {
+    @include mix.mix_inner(40px, 0px);
+    @include mix.mix_flexBase_between;
+  }
+
+  &_infoBox {
+    width: 340px;
+
+    @include mix.mq("md") {
+      width: 100%;
+      margin: 0px auto;
+      @include mix.mix_lv4Space_bottom;
+      text-align: center;
+    }
+  }
+
+  &_address {
+    @include mix.mq("md") {
+      display: inline-block;
+      text-align: left;
+    }
+  }
+
+  &_logo {
+    width: 260px;
+
+    @include mix.mq("md") {
+      width: 50%;
+      max-width: 280px;
+      margin: 0px auto;
+      @include mix.mix_lv4Space_bottom;
+    }
+  }
+
+  &_nav {
+    width: calc(100% - 370px);
+    text-align: center;
+    > ul {
+      @include mix.mix_flexBase_end;
+
+      @include mix.mq("md") {
+        @include mix.mix_flexBase_center;
+      }
+
+      > li {
+        padding: 0px 16px;
+      }
+    }
+
+    @include mix.mq("md") {
+      width: 100%;
+      margin: 0px auto;
+      @include mix.mix_lv4Space_bottom;
+    }
+  }
+
+  &_copy {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: rem(14px);
+    color: #666;
+
+    a {
+      color: var.$color-text-default-pc;
+    }
+  }
+}

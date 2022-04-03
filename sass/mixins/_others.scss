@@ -1,0 +1,54 @@
+@use "../variables/" as var;
+@use "responsive" as mq;
+
+// mix_clearFix
+// --------------------------------------------------------------------------
+
+@mixin mix_clearFix {
+  &::after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
+
+// GoogleMapやYouTubeなどが縦横比を維持したままレスポンシブ対応
+// @include mix_aspectRatio(横, 縦);
+// --------------------------------------------------------------------------
+
+@mixin mix_aspectRatio($width: 16, $height: 9) {
+  position: relative;
+
+  &::before {
+    content: "";
+    float: left;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  & > :first-child {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+// mix_width100per
+// --------------------------------------------------------------------------
+
+@mixin mix_width100per {
+  width: 100vw;
+  position: relative;
+  margin: 0 calc(50% - 50vw);
+
+  @include mq.mq(xl) {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,20 @@
+@use "../variables/breakpoints" as bp;
+
+@mixin mq($size, $width: max) {
+  $result: 0;
+  @if(type-of($size) == number) {
+    $result: $size;
+  } @else {
+    @each $key, $value in bp.$mq-breakpoints {
+      @if($key == $size) {
+        $result: $value;
+      }
+    }
+  }
+  @if($width == min) {
+    $result: $result + 1;
+  }
+  @media print, screen and (#{$width}-width: #{$result}) {
+    @content;
+  }
+}

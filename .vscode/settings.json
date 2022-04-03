@@ -1,0 +1,8 @@
+{
+  "liveServer.settings.proxy": {
+    "enable": true,
+    "baseUri": "/",
+    "proxyUri": "http://localhost/00_template/htdocs/"
+  },
+  "liveServer.settings.useWebExt": true // 有効にする
+}

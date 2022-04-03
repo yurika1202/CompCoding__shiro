@@ -1,0 +1,114 @@
+@use "../variables/" as var;
+@use "../mixins/" as mix;
+
+.ly_header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  z-index: 1001;
+
+  @include mix.mq(sm) {
+    height: 50px;
+  }
+
+  &_inner {
+    position: relative;
+    @include mix.mix_flexBase_between;
+    padding: 0% 44px;
+
+    @include mix.mq(md) {
+      padding: 0% 4vw;
+    }
+
+    @include mix.mq(sm) {
+      padding: 0% 3vw;
+    }
+  }
+
+  &_logo {
+    width: 150px;
+    height: 80px;
+
+    a {
+      @include mix.mix_flexBase_allCenter;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    @include mix.mq(md) {
+      width: 24%;
+      height: 80px;
+    }
+
+    @include mix.mq(sm) {
+      width: 24%;
+      height: 50px;
+    }
+  }
+}
+
+.ly_headerNav {
+  @include mix.mq(lg) {
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 901;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px 4%;
+    pointer-events: none;
+  }
+
+  &_baseList {
+    @include mix.mix_flexBase_end;
+
+    @include mix.mq(lg) {
+      display: block;
+      pointer-events: auto;
+      padding: 80px 0px;
+    }
+
+    > li {
+      margin: 0px 0px 0px 50px;
+      height: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      pointer-events: auto;
+
+      @include mix.mq(lg) {
+        margin: 16px 0px 16px 0px;
+        height: auto;
+      }
+
+      a {
+        color: var.$color-text-default-pc;
+        font-weight: bold;
+        text-decoration: none;
+
+        @include mix.mq(lg) {
+          color: #fff;
+          font-size: rem(19px);
+        }
+
+        @include mix.hover() {
+          color: var.$color-accent;
+        }
+
+        @include mix.mq(md, min) {
+          transition: all 0.3s ease-in-out;
+        }
+      }
+
+      &.is_active a {
+        color: var.$color-accent;
+      }
+    }
+  }
+}
