@@ -1,23 +1,27 @@
 @use "../variables/" as var;
 @use "../mixins/" as mix;
 
+html {
+  height: -webkit-fill-available;
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   background: var.$color-body;
-  color: var.$color-text-default-pc;
+  color: var.$color-text-default;
   font-family: var.$font-family-default;
   overflow-x: hidden;
   position: relative;
   -webkit-text-size-adjust: 100%;
-  line-height: 1.8;
+  line-height: 1.1875;
   font-size: rem(16px);
   font-feature-settings: "palt" 1;
 
   @include mix.mq("md") {
     font-size: rem(15px);
-    color: var.$color-text-default-sp;
   }
 
   @include mix.mq("sm") {
@@ -26,5 +30,5 @@ body {
 }
 
 p {
-  color: var.$color-text-default-pc;
+  color: var.$color-text-default;
 }
