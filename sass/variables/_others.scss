@@ -1,5 +1,11 @@
-// Font
+// font family
 // --------------------------------------------------------------------------
-$font-family-default: myriad-pro, sans-serif;
-$font-family-poppins: poppins, sans-serif;
-$font-family-text: YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+$myriad: myriad-pro, sans-serif;
+$poppins: poppins, sans-serif;
+$basic: YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+
+$font: (
+    font-global: $myriad,
+    font-heading: $poppins,
+    font-lead: $basic,
+);

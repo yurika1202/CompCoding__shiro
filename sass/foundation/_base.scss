@@ -1,5 +1,6 @@
-@use "../variables/" as var;
+@use "../functions/" as *;
 @use "../mixins/" as mix;
+@use "../variables/" as var;
 
 html {
   height: -webkit-fill-available;
@@ -10,9 +11,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
   min-height: -webkit-fill-available;
-  background: var.$color-body;
-  color: var.$color-text-default;
-  font-family: var.$font-family-default;
+  background: colors(color-body-background);
+  color: colors(color-global-text);
+  font-family: font-family(font-global);
   overflow-x: hidden;
   position: relative;
   -webkit-text-size-adjust: 100%;
@@ -30,5 +31,5 @@ body {
 }
 
 p {
-  color: var.$color-text-default;
+  color: colors(color-global-text);
 }

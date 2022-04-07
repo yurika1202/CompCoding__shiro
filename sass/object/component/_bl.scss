@@ -52,91 +52,8 @@
 // --------------------------------------------------------------------------
 
 .bl_commonBlock {
-  @include mix.mix_inner(var.$lv1Space, 0px);
 }
 
-// bl_breadcrumb
-// --------------------------------------------------------------------------
-
-.bl_breadcrumb {
-  position: relative;
-  width: 100%;
-
-  &_inner {
-    @include mix.mix_inner(12px, 12px);
-
-    > ol {
-      @include mix.mix_flexBase_start;
-
-      > li {
-        padding-right: 18px;
-        margin-right: 18px;
-        position: relative;
-
-        > a {
-          color: var.$color-link;
-
-          &[aria-current] {
-            pointer-events: none;
-            text-decoration: none;
-            color: var.$color-text-default-pc;
-          }
-
-          @include mix.hover() {
-            color: var.$color-link;
-            text-decoration: underline;
-          }
-        }
-
-        &:not(:last-child) {
-          &::after {
-            content: "";
-            margin-left: 18px;
-            width: 0.5rem;
-            height: 0.5rem;
-            border-top: 1px solid var.$color-text-default-pc;
-            border-right: 1px solid var.$color-text-default-pc;
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: rotate(45deg) translateY(-50%);
-          }
-        }
-      }
-    }
-
-    @include mix.mq(xl) {
-      width: 100vw;
-      overflow: auto;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-
-      &::-webkit-scrollbar {
-        height: 3px;
-      }
-      &::-webkit-scrollbar-track {
-        background: #eee;
-      }
-      &::-webkit-scrollbar-thumb {
-        background: #ccc;
-      }
-
-      > ul {
-        display: table;
-
-        > li {
-          display: table-cell;
-          padding-right: 6px;
-          white-space: nowrap;
-        }
-      }
-    }
-
-    @include mix.mq(md) {
-      font-size: rem(14px);
-    }
-  }
-}
 
 // mix_cardUnit
 // @include mix_cardUnit(カラム数,縦軸の余白,左右の余白);
@@ -146,13 +63,4 @@
 
 .bl_cardUnit {
   @include mix.mix_cardUnit(4, 20px, 3%);
-}
-
-// bl_pageTop
-// ----------------------------------------------------------------
-
-.bl_pageTop {
-  position: fixed;
-  right: 4%;
-  bottom: 40px;
 }

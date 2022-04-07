@@ -1,9 +1,8 @@
 @use "../variables/" as var;
 @use "responsive" as mq;
 
-// mix_clearFix
+// clearFix
 // --------------------------------------------------------------------------
-
 @mixin mix_clearFix {
   &::after {
     clear: both;
@@ -12,10 +11,9 @@
   }
 }
 
-// GoogleMapやYouTubeなどが縦横比を維持したままレスポンシブ対応
+// aspectRatio
 // @include mix_aspectRatio(横, 縦);
 // --------------------------------------------------------------------------
-
 @mixin mix_aspectRatio($width: 16, $height: 9) {
   position: relative;
 
@@ -40,9 +38,8 @@
   }
 }
 
-// mix_width100per
+// width100per
 // --------------------------------------------------------------------------
-
 @mixin mix_width100per {
   width: 100vw;
   position: relative;
