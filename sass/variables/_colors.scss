@@ -1,0 +1,22 @@
+// palettes
+// --------------------------------------------------------------------------
+$black: #333;
+$mildBlack: #2B2B2B;
+$white: #fff;
+$gray: #707070;
+$lightGray: #EDEDED;
+$silverGray: #A0A0A0;
+
+//color map
+// --------------------------------------------------------------------------
+$colors: (
+    color-body-background: $white,
+    color-block-background: $lightGray,
+    color-global-text: $mildBlack,
+    color-global-icon: $gray,
+    color-headingLv2-text: $black,
+    color-headingLv2-border: $silverGray,
+    color-info-border: $silverGray,
+    color-contact-btn: $silverGray,
+    color-contact-border: $silverGray,
+);

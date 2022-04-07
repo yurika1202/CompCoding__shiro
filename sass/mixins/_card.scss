@@ -1,0 +1,26 @@
+@use "responsive" as mq;
+
+// mix_cardUnit
+// @include mix_cardUnit(PCカラム数,TBカラム数,SPカラム数,縦軸の余白,左右の余白);
+// 例：mix_cardUnit(3,2,1,30px,4%);
+// 例：class="bl_cardUnit bl_cardUnit__col4"
+// ----------------------------------------------------------------
+@mixin mix_cardUnit($col-count: 3, $col-count-md: 2, $col-count-sp: 1, $row-gap: 0, $column-gap: 0) {
+  $margin-size: #{$column-gap * ($col-count - 1)};
+
+  &__col#{$col-count} {
+    display: grid;
+    grid-template-rows: auto;
+    grid-column-gap: $column-gap;
+    grid-row-gap: $row-gap;
+    grid-template-columns: repeat($col-count, calc((100% - #{$margin-size}) / #{$col-count}));
+
+    @include mq.mq(md) {
+      grid-template-columns: repeat($col-count, calc((100% - #{$column-gap}) / #{$col-count-md}));
+    }
+
+    @include mq.mq(sm) {
+      grid-template-columns: repeat($col-count, calc((100% - #{$column-gap}) / #{$col-count-sp}));
+    }
+  }
+}

@@ -4,307 +4,307 @@
 // lv1Space
 // --------------------------------------------------------------------------
 
-@mixin mix_lv1Space {
-  padding-top: var.$lv1Space;
-  padding-bottom: var.$lv1Space;
-
-  @include mq.mq(xl) {
-    padding-top: var.$lv1Space_xl;
-    padding-bottom: var.$lv1Space_xl;
-  }
-
-  @include mq.mq(lg) {
-    padding-top: var.$lv1Space_lg;
-    padding-bottom: var.$lv1Space_lg;
-  }
-
-  @include mq.mq(md) {
-    padding-top: var.$lv1Space_md;
-    padding-bottom: var.$lv1Space_md;
-  }
-
-  @include mq.mq(sm) {
-    padding-top: var.$lv1Space_sm;
-    padding-bottom: var.$lv1Space_sm;
-  }
-}
-
-@mixin mix_lv1Space_top {
-  padding-top: var.$lv1Space;
-
-  @include mq.mq(xl) {
-    padding-top: var.$lv1Space_xl;
-  }
-
-  @include mq.mq(lg) {
-    padding-top: var.$lv1Space_lg;
-  }
-
-  @include mq.mq(md) {
-    padding-top: var.$lv1Space_md;
-  }
-
-  @include mq.mq(sm) {
-    padding-top: var.$lv1Space_sm;
-  }
-}
-
-@mixin mix_lv1Space_bottom {
-  padding-bottom: var.$lv1Space;
-
-  @include mq.mq(xl) {
-    padding-bottom: var.$lv1Space_xl;
-  }
-
-  @include mq.mq(lg) {
-    padding-bottom: var.$lv1Space_lg;
-  }
-
-  @include mq.mq(md) {
-    padding-bottom: var.$lv1Space_md;
-  }
-
-  @include mq.mq(sm) {
-    padding-bottom: var.$lv1Space_sm;
-  }
-}
-
-// lv2Space
-// --------------------------------------------------------------------------
-
-@mixin mix_lv2Space {
-  padding-top: var.$lv2Space;
-  padding-bottom: var.$lv2Space;
-
-  @include mq.mq(xl) {
-    padding-top: var.$lv2Space_xl;
-    padding-bottom: var.$lv2Space_xl;
-  }
-
-  @include mq.mq(lg) {
-    padding-top: var.$lv2Space_lg;
-    padding-bottom: var.$lv2Space_lg;
-  }
-
-  @include mq.mq(md) {
-    padding-top: var.$lv2Space_md;
-    padding-bottom: var.$lv2Space_md;
-  }
-
-  @include mq.mq(sm) {
-    padding-top: var.$lv2Space_sm;
-    padding-bottom: var.$lv2Space_sm;
-  }
-}
-
-@mixin mix_lv2Space_top {
-  padding-top: var.$lv2Space;
-
-  @include mq.mq(xl) {
-    padding-top: var.$lv2Space_xl;
-  }
-
-  @include mq.mq(lg) {
-    padding-top: var.$lv2Space_lg;
-  }
-
-  @include mq.mq(md) {
-    padding-top: var.$lv2Space_md;
-  }
-
-  @include mq.mq(sm) {
-    padding-top: var.$lv2Space_sm;
-  }
-}
-
-@mixin mix_lv2Space_bottom {
-  padding-bottom: var.$lv2Space;
-
-  @include mq.mq(xl) {
-    padding-bottom: var.$lv2Space_xl;
-  }
-
-  @include mq.mq(lg) {
-    padding-bottom: var.$lv2Space_lg;
-  }
-
-  @include mq.mq(md) {
-    padding-bottom: var.$lv2Space_md;
-  }
-
-  @include mq.mq(sm) {
-    padding-bottom: var.$lv2Space_sm;
-  }
-}
-
-// lv3Space
-// --------------------------------------------------------------------------
-
-@mixin mix_lv3Space {
-  padding-top: var.$lv3Space;
-  padding-bottom: var.$lv3Space;
-
-  @include mq.mq(xl) {
-    padding-top: var.$lv3Space_xl;
-    padding-bottom: var.$lv3Space_xl;
-  }
-
-  @include mq.mq(lg) {
-    padding-top: var.$lv3Space_lg;
-    padding-bottom: var.$lv3Space_lg;
-  }
-
-  @include mq.mq(md) {
-    padding-top: var.$lv3Space_md;
-    padding-bottom: var.$lv3Space_md;
-  }
-
-  @include mq.mq(sm) {
-    padding-top: var.$lv3Space_sm;
-    padding-bottom: var.$lv3Space_sm;
-  }
-}
-
-@mixin mix_lv3Space_top {
-  padding-top: var.$lv3Space;
-
-  @include mq.mq(xl) {
-    padding-top: var.$lv3Space_xl;
-  }
-
-  @include mq.mq(lg) {
-    padding-top: var.$lv3Space_lg;
-  }
-
-  @include mq.mq(md) {
-    padding-top: var.$lv3Space_md;
-  }
-
-  @include mq.mq(sm) {
-    padding-top: var.$lv3Space_sm;
-  }
-}
-
-@mixin mix_lv3Space_bottom {
-  padding-bottom: var.$lv3Space;
-
-  @include mq.mq(xl) {
-    padding-bottom: var.$lv3Space_xl;
-  }
-
-  @include mq.mq(lg) {
-    padding-bottom: var.$lv3Space_lg;
-  }
-
-  @include mq.mq(md) {
-    padding-bottom: var.$lv3Space_md;
-  }
-
-  @include mq.mq(sm) {
-    padding-bottom: var.$lv3Space_sm;
-  }
-}
-
-// lv4Space
-// --------------------------------------------------------------------------
-
-@mixin mix_lv4Space {
-  padding-top: var.$lv4Space;
-  padding-bottom: var.$lv4Space;
-
-  @include mq.mq(xl) {
-    padding-top: var.$lv4Space_xl;
-    padding-bottom: var.$lv4Space_xl;
-  }
-
-  @include mq.mq(lg) {
-    padding-top: var.$lv4Space_lg;
-    padding-bottom: var.$lv4Space_lg;
-  }
-
-  @include mq.mq(md) {
-    padding-top: var.$lv4Space_md;
-    padding-bottom: var.$lv4Space_md;
-  }
-
-  @include mq.mq(sm) {
-    padding-top: var.$lv4Space_sm;
-    padding-bottom: var.$lv4Space_sm;
-  }
-}
-
-@mixin mix_lv4Space_top {
-  padding-top: var.$lv4Space;
-
-  @include mq.mq(xl) {
-    padding-top: var.$lv4Space_xl;
-  }
-
-  @include mq.mq(lg) {
-    padding-top: var.$lv4Space_lg;
-  }
-
-  @include mq.mq(md) {
-    padding-top: var.$lv4Space_md;
-  }
-
-  @include mq.mq(sm) {
-    padding-top: var.$lv4Space_sm;
-  }
-}
-
-@mixin mix_lv4Space_bottom {
-  padding-bottom: var.$lv4Space;
-
-  @include mq.mq(xl) {
-    padding-bottom: var.$lv4Space_xl;
-  }
-
-  @include mq.mq(lg) {
-    padding-bottom: var.$lv4Space_lg;
-  }
-
-  @include mq.mq(md) {
-    padding-bottom: var.$lv4Space_md;
-  }
-
-  @include mq.mq(sm) {
-    padding-bottom: var.$lv4Space_sm;
-  }
-}
-
-// mix_inner
-// --------------------------------------------------------------------------
-
-@mixin mix_inner(
-  $pt: (
-    var.$lv1Space,
-  ),
-  $pb: (
-    var.$lv1Space,
-  )
-) {
-  width: var.$width-pc;
-  margin: 0px auto;
-
-  @include mq.mq(xl, min) {
-    padding: $pt 0px $pb;
-  }
-
-  @include mq.mq(xl) {
-    width: 100%;
-    padding: $pt var.$lrSpace_xl $pb;
-  }
-
-  @include mq.mq(lg) {
-    padding: $pt var.$lrSpace_lg $pb;
-  }
-
-  @include mq.mq(md) {
-    padding: $pt var.$lrSpace_md $pb;
-  }
-
-  @include mq.mq(sm) {
-    padding: $pt var.$lrSpace_sm $pb;
-  }
-}
+// @mixin mix_lv1Space {
+//   padding-top: var.$lv1Space;
+//   padding-bottom: var.$lv1Space;
+
+//   @include mq.mq(xl) {
+//     padding-top: var.$lv1Space_xl;
+//     padding-bottom: var.$lv1Space_xl;
+//   }
+
+//   @include mq.mq(lg) {
+//     padding-top: var.$lv1Space_lg;
+//     padding-bottom: var.$lv1Space_lg;
+//   }
+
+//   @include mq.mq(md) {
+//     padding-top: var.$lv1Space_md;
+//     padding-bottom: var.$lv1Space_md;
+//   }
+
+//   @include mq.mq(sm) {
+//     padding-top: var.$lv1Space_sm;
+//     padding-bottom: var.$lv1Space_sm;
+//   }
+// }
+
+// @mixin mix_lv1Space_top {
+//   padding-top: var.$lv1Space;
+
+//   @include mq.mq(xl) {
+//     padding-top: var.$lv1Space_xl;
+//   }
+
+//   @include mq.mq(lg) {
+//     padding-top: var.$lv1Space_lg;
+//   }
+
+//   @include mq.mq(md) {
+//     padding-top: var.$lv1Space_md;
+//   }
+
+//   @include mq.mq(sm) {
+//     padding-top: var.$lv1Space_sm;
+//   }
+// }
+
+// @mixin mix_lv1Space_bottom {
+//   padding-bottom: var.$lv1Space;
+
+//   @include mq.mq(xl) {
+//     padding-bottom: var.$lv1Space_xl;
+//   }
+
+//   @include mq.mq(lg) {
+//     padding-bottom: var.$lv1Space_lg;
+//   }
+
+//   @include mq.mq(md) {
+//     padding-bottom: var.$lv1Space_md;
+//   }
+
+//   @include mq.mq(sm) {
+//     padding-bottom: var.$lv1Space_sm;
+//   }
+// }
+
+// // lv2Space
+// // --------------------------------------------------------------------------
+
+// @mixin mix_lv2Space {
+//   padding-top: var.$lv2Space;
+//   padding-bottom: var.$lv2Space;
+
+//   @include mq.mq(xl) {
+//     padding-top: var.$lv2Space_xl;
+//     padding-bottom: var.$lv2Space_xl;
+//   }
+
+//   @include mq.mq(lg) {
+//     padding-top: var.$lv2Space_lg;
+//     padding-bottom: var.$lv2Space_lg;
+//   }
+
+//   @include mq.mq(md) {
+//     padding-top: var.$lv2Space_md;
+//     padding-bottom: var.$lv2Space_md;
+//   }
+
+//   @include mq.mq(sm) {
+//     padding-top: var.$lv2Space_sm;
+//     padding-bottom: var.$lv2Space_sm;
+//   }
+// }
+
+// @mixin mix_lv2Space_top {
+//   padding-top: var.$lv2Space;
+
+//   @include mq.mq(xl) {
+//     padding-top: var.$lv2Space_xl;
+//   }
+
+//   @include mq.mq(lg) {
+//     padding-top: var.$lv2Space_lg;
+//   }
+
+//   @include mq.mq(md) {
+//     padding-top: var.$lv2Space_md;
+//   }
+
+//   @include mq.mq(sm) {
+//     padding-top: var.$lv2Space_sm;
+//   }
+// }
+
+// @mixin mix_lv2Space_bottom {
+//   padding-bottom: var.$lv2Space;
+
+//   @include mq.mq(xl) {
+//     padding-bottom: var.$lv2Space_xl;
+//   }
+
+//   @include mq.mq(lg) {
+//     padding-bottom: var.$lv2Space_lg;
+//   }
+
+//   @include mq.mq(md) {
+//     padding-bottom: var.$lv2Space_md;
+//   }
+
+//   @include mq.mq(sm) {
+//     padding-bottom: var.$lv2Space_sm;
+//   }
+// }
+
+// // lv3Space
+// // --------------------------------------------------------------------------
+
+// @mixin mix_lv3Space {
+//   padding-top: var.$lv3Space;
+//   padding-bottom: var.$lv3Space;
+
+//   @include mq.mq(xl) {
+//     padding-top: var.$lv3Space_xl;
+//     padding-bottom: var.$lv3Space_xl;
+//   }
+
+//   @include mq.mq(lg) {
+//     padding-top: var.$lv3Space_lg;
+//     padding-bottom: var.$lv3Space_lg;
+//   }
+
+//   @include mq.mq(md) {
+//     padding-top: var.$lv3Space_md;
+//     padding-bottom: var.$lv3Space_md;
+//   }
+
+//   @include mq.mq(sm) {
+//     padding-top: var.$lv3Space_sm;
+//     padding-bottom: var.$lv3Space_sm;
+//   }
+// }
+
+// @mixin mix_lv3Space_top {
+//   padding-top: var.$lv3Space;
+
+//   @include mq.mq(xl) {
+//     padding-top: var.$lv3Space_xl;
+//   }
+
+//   @include mq.mq(lg) {
+//     padding-top: var.$lv3Space_lg;
+//   }
+
+//   @include mq.mq(md) {
+//     padding-top: var.$lv3Space_md;
+//   }
+
+//   @include mq.mq(sm) {
+//     padding-top: var.$lv3Space_sm;
+//   }
+// }
+
+// @mixin mix_lv3Space_bottom {
+//   padding-bottom: var.$lv3Space;
+
+//   @include mq.mq(xl) {
+//     padding-bottom: var.$lv3Space_xl;
+//   }
+
+//   @include mq.mq(lg) {
+//     padding-bottom: var.$lv3Space_lg;
+//   }
+
+//   @include mq.mq(md) {
+//     padding-bottom: var.$lv3Space_md;
+//   }
+
+//   @include mq.mq(sm) {
+//     padding-bottom: var.$lv3Space_sm;
+//   }
+// }
+
+// // lv4Space
+// // --------------------------------------------------------------------------
+
+// @mixin mix_lv4Space {
+//   padding-top: var.$lv4Space;
+//   padding-bottom: var.$lv4Space;
+
+//   @include mq.mq(xl) {
+//     padding-top: var.$lv4Space_xl;
+//     padding-bottom: var.$lv4Space_xl;
+//   }
+
+//   @include mq.mq(lg) {
+//     padding-top: var.$lv4Space_lg;
+//     padding-bottom: var.$lv4Space_lg;
+//   }
+
+//   @include mq.mq(md) {
+//     padding-top: var.$lv4Space_md;
+//     padding-bottom: var.$lv4Space_md;
+//   }
+
+//   @include mq.mq(sm) {
+//     padding-top: var.$lv4Space_sm;
+//     padding-bottom: var.$lv4Space_sm;
+//   }
+// }
+
+// @mixin mix_lv4Space_top {
+//   padding-top: var.$lv4Space;
+
+//   @include mq.mq(xl) {
+//     padding-top: var.$lv4Space_xl;
+//   }
+
+//   @include mq.mq(lg) {
+//     padding-top: var.$lv4Space_lg;
+//   }
+
+//   @include mq.mq(md) {
+//     padding-top: var.$lv4Space_md;
+//   }
+
+//   @include mq.mq(sm) {
+//     padding-top: var.$lv4Space_sm;
+//   }
+// }
+
+// @mixin mix_lv4Space_bottom {
+//   padding-bottom: var.$lv4Space;
+
+//   @include mq.mq(xl) {
+//     padding-bottom: var.$lv4Space_xl;
+//   }
+
+//   @include mq.mq(lg) {
+//     padding-bottom: var.$lv4Space_lg;
+//   }
+
+//   @include mq.mq(md) {
+//     padding-bottom: var.$lv4Space_md;
+//   }
+
+//   @include mq.mq(sm) {
+//     padding-bottom: var.$lv4Space_sm;
+//   }
+// }
+
+// // mix_inner
+// // --------------------------------------------------------------------------
+
+// @mixin mix_inner(
+//   $pt: (
+//     var.$lv1Space,
+//   ),
+//   $pb: (
+//     var.$lv1Space,
+//   )
+// ) {
+//   width: var.$width-pc;
+//   margin: 0px auto;
+
+//   @include mq.mq(xl, min) {
+//     padding: $pt 0px $pb;
+//   }
+
+//   @include mq.mq(xl) {
+//     width: 100%;
+//     padding: $pt var.$lrSpace_xl $pb;
+//   }
+
+//   @include mq.mq(lg) {
+//     padding: $pt var.$lrSpace_lg $pb;
+//   }
+
+//   @include mq.mq(md) {
+//     padding: $pt var.$lrSpace_md $pb;
+//   }
+
+//   @include mq.mq(sm) {
+//     padding: $pt var.$lrSpace_sm $pb;
+//   }
+// }

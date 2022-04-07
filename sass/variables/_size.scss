@@ -2,74 +2,25 @@
 // --------------------------------------------------------------------------
 $width-pc: 960px;
 
-// Space
-// --------------------------------------------------------------------------
-
-// 余白はだいたい共通化されているので、
-// 統一化したいので個別に作らずmixinでまとめたい。
-
-// lv1
-$lv1Space: 200px;
-$lv1Space_xl: 180px;
-$lv1Space_lg: 22vw;
-$lv1Space_md: 20vw;
-$lv1Space_sm: 16vw;
-
-// lv2
-$lv2Space: 140px;
-$lv2Space_xl: 120px;
-$lv2Space_lg: 16vw;
-$lv2Space_md: 14vw;
-$lv2Space_sm: 12vw;
-
-// lv3
-$lv3Space: 40px;
-$lv3Space_xl: 38px;
-$lv3Space_lg: 4vw;
-$lv3Space_md: 4vw;
-$lv3Space_sm: 3vw;
-
-// lv4
-$lv4Space: 30px;
-$lv4Space_xl: 30px;
-$lv4Space_lg: 26px;
-$lv4Space_md: 3vw;
-$lv4Space_sm: 3vw;
-
-
-// 可変領域の左右の余白もだいたい同じなので統一化
-$lrSpace_xl: 4%;
-$lrSpace_lg: 5%;
-$lrSpace_md: 5%;
-$lrSpace_sm: 6%;
-
 // fontsize
 // --------------------------------------------------------------------------
-
 // lv1
-$lv1FontSize: 44px;
-$lv1FontSize_xl: 40px;
+$lv1FontSize: 120px;
+$lv1FontSize_xl: 120px;
 $lv1FontSize_lg: 36px;
 $lv1FontSize_md: 30px;
 $lv1FontSize_sm: 26px;
 
 // lv2
-$lv2FontSize: 28px;
-$lv2FontSize_xl: 26px;
+$lv2FontSize: 36px;
+$lv2FontSize_xl: 36px;
 $lv2FontSize_lg: 25px;
 $lv2FontSize_md: 24px;
 $lv2FontSize_sm: 20px;
 
 // lv3
-$lv3FontSize: 22px;
-$lv3FontSize_xl: 20px;
+$lv3FontSize: 24px;
+$lv3FontSize_xl: 24px;
 $lv3FontSize_lg: 18px;
 $lv3FontSize_md: 17px;
 $lv3FontSize_sm: 16px;
-
-// lv4
-$lv4FontSize: 22px;
-$lv4FontSize_xl: 20px;
-$lv4FontSize_lg: 18px;
-$lv4FontSize_md: 17px;
-$lv4FontSize_sm: 16px;
