@@ -1,2 +1,17 @@
+@use "../../functions/" as *;
 @use "../../variables/" as var;
 @use "../../mixins/" as mix;
+
+// logo
+// --------------------------------------------------------------------------
+.el_logo {
+    color: colors(color-headingLv1-text);
+
+    &__header {
+        font-size: rem(36px);
+    }
+
+    &__mv {
+        font-size: rem(120px);
+    }
+}

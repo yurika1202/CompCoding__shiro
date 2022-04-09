@@ -1,2 +1,41 @@
+@use "../../functions/" as *;
 @use "../../variables/" as var;
 @use "../../mixins/" as mix;
+
+// mvTextUnit
+// --------------------------------------------------------------------------
+.un_mvTextUnit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.un_mvTextUnit_item {
+    &__intr {
+        display: inline-block;
+        font-family: font-family(font-lead);
+        color: colors(color-mv-text);
+        padding: 0 20px;
+        position: relative;
+
+        &::before, &::after {
+            content: "";
+            width: 12px;
+            height: 2px;
+            background: colors(color-mv-text);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &::before {
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
+        }
+    }
+}

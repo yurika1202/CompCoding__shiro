@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body,
 div,
 dl,
@@ -137,6 +138,12 @@ li {
 
 a {
   color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
 }
 
 html {
@@ -173,6 +180,10 @@ p {
   color: #2B2B2B;
 }
 
+button {
+  cursor: pointer;
+}
+
 .ly_footer {
   padding: 12px 0;
 }
@@ -184,12 +195,10 @@ p {
 }
 
 .ly_header {
-  width: 75%;
-  max-width: 960px;
-  padding-top: 40px;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  height: 64px;
+  position: absolute;
+  top: 40px;
   z-index: 100;
 }
 
@@ -198,12 +207,17 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  width: 75%;
+  max-width: 960px;
+  height: inherit;
+  margin: 0 auto;
 }
 
 .ly_mv {
   width: 100%;
   height: 620px;
-  background: url(/common/img/header.png) no-repeat center center/contain;
+  background: url(/common/img/header.png) no-repeat center center/cover;
+  position: relative;
 }
 
 .ly_mv_inner {
@@ -467,26 +481,6 @@ p {
           animation-delay: 0.8s;
 }
 
-.bl_width_100per {
-  width: 100vw;
-  position: relative;
-  margin: 0 calc(50% - 50vw);
-}
-@media print, screen and (min-width: 1280px) {
-  .bl_width_100per {
-    width: 100vw;
-  }
-}
-.bl_width_100per_inner {
-  width: 960px;
-  margin: 0px auto;
-}
-@media print, screen and (min-width: 1280px) {
-  .bl_width_100per_inner {
-    width: 100%;
-  }
-}
-
 .bl_cardUnit__col4 {
   display: grid;
   grid-template-rows: auto;
@@ -503,6 +497,40 @@ p {
   .bl_cardUnit__col4 {
     grid-template-columns: repeat(4, calc((100% - 0) / 3%));
   }
+}
+
+.bl_headerNav_btn {
+  width: 36px;
+  height: 19px;
+  position: relative;
+}
+.bl_headerNav_btn > span {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bl_headerNav_btn > span:nth-of-type(1) {
+  top: 0;
+}
+.bl_headerNav_btn > span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.bl_headerNav_btn > span:nth-of-type(3) {
+  bottom: 0;
+}
+
+.el_logo {
+  color: #fff;
+}
+.el_logo__header {
+  font-size: 2.25rem;
+}
+.el_logo__mv {
+  font-size: 7.5rem;
 }
 
 @media print, screen and (min-width: 1280px) {
@@ -865,5 +893,36 @@ p {
 
 .hp_txt_r {
   text-align: right !important;
+}
+
+.un_mvTextUnit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.un_mvTextUnit_item__intr {
+  display: inline-block;
+  font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  color: #fff;
+  padding: 0 20px;
+  position: relative;
+}
+.un_mvTextUnit_item__intr::before, .un_mvTextUnit_item__intr::after {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.un_mvTextUnit_item__intr::before {
+  left: 0;
+}
+.un_mvTextUnit_item__intr::after {
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
