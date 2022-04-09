@@ -481,6 +481,28 @@ button {
           animation-delay: 0.8s;
 }
 
+.bl_commonBlock {
+  padding-top: 80px;
+  text-align: center;
+  position: relative;
+}
+.bl_commonBlock__pb40 {
+  padding-bottom: 40px;
+}
+.bl_commonBlock__pb60 {
+  padding-bottom: 60px;
+}
+.bl_commonBlock__pb100 {
+  padding-bottom: 100px;
+}
+.bl_commonBlock__pb120 {
+  padding-bottom: 120px;
+}
+
+.bl_commonBlock_lead {
+  padding: 32px 0 40px;
+}
+
 .bl_cardUnit__col4 {
   display: grid;
   grid-template-rows: auto;
@@ -497,6 +519,43 @@ button {
   .bl_cardUnit__col4 {
     grid-template-columns: repeat(4, calc((100% - 0) / 3%));
   }
+}
+
+.bl_width_100per {
+  width: 100vw;
+  position: relative;
+  margin: 0 calc(50% - 50vw);
+}
+@media print, screen and (min-width: 1280px) {
+  .bl_width_100per {
+    width: 100vw;
+  }
+}
+.bl_width_100per_inner {
+  width: 960px;
+  height: 100%;
+  margin: 0px auto;
+}
+@media print, screen and (min-width: 1280px) {
+  .bl_width_100per_inner {
+    width: 100%;
+  }
+}
+
+.bl_bgImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+}
+.bl_bgImage img {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .bl_headerNav_btn {
@@ -531,6 +590,57 @@ button {
 }
 .el_logo__mv {
   font-size: 7.5rem;
+}
+
+.el_lv2Heading {
+  font-family: poppins, sans-serif;
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #333;
+  padding-bottom: 24px;
+  position: relative;
+}
+.el_lv2Heading::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: #333;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.el_btn {
+  display: inline-block;
+  padding: 1.5em 0;
+  width: 360px;
+  max-width: 100%;
+  background: #fff;
+  border: 1px solid #A0A0A0;
+  font-size: 1.25rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.el_beforeIconBtn {
+  position: relative;
+  padding-left: 2.7em;
+}
+.el_beforeIconBtn__contact::before {
+  content: "";
+  width: 30px;
+  height: 25px;
+  background: url(/common/img/contact_icon.svg) no-repeat center center/contain;
+  position: absolute;
+  top: 50%;
+  left: 3.95em;
+  transform: translateY(-50%);
+}
+
+.el_footerCopyright {
+  display: block;
+  text-align: center;
 }
 
 @media print, screen and (min-width: 1280px) {

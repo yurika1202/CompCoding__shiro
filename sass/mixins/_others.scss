@@ -1,2 +1,14 @@
 @use "../variables/" as var;
 @use "responsive" as mq;
+
+// width100per
+// --------------------------------------------------------------------------
+@mixin mix_width100per {
+    width: 100vw;
+    position: relative;
+    margin: 0 calc(50% - 50vw);
+
+    @include mq.mq(xl) {
+      width: 100vw;
+    }
+}

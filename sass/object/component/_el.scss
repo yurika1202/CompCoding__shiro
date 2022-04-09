@@ -15,3 +15,64 @@
         font-size: rem(120px);
     }
 }
+
+// heading
+// --------------------------------------------------------------------------
+.el_lv2Heading {
+    font-family: font-family(font-heading);
+    font-weight: bold;
+    font-size: rem(36px);
+    color: colors(color-headingLv2-text);
+    padding-bottom: 24px;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 40px;
+        height: 1px;
+        background: colors(color-headingLv2-border);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+// btn
+// --------------------------------------------------------------------------
+.el_btn {
+    display: inline-block;
+    padding: 1.5em 0;
+    width: 360px;
+    max-width: 100%;
+    background: colors(color-btn-background);
+    border: 1px solid colors(color-btn-border);
+    font-size: rem(20px);
+    text-align: center;
+    cursor: pointer;
+}
+
+.el_beforeIconBtn {
+    position: relative;
+    padding-left: 2.7em;
+
+    &__contact {
+        &::before {
+            content: "";
+            width: 30px;
+            height: 25px;
+            background: url(/common/img/contact_icon.svg) no-repeat center center / contain;
+            position: absolute;
+            top: 50%;
+            left: 3.95em;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// footerCopyright
+// --------------------------------------------------------------------------
+.el_footerCopyright {
+    display: block;
+    text-align: center;
+}
