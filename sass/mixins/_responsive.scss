@@ -1,8 +1,10 @@
+@use "sass:meta";
 @use "../variables/breakpoints" as bp;
 
-@mixin mq($size, $width: max) {
+@mixin mq($size, $width: min) {
   $result: 0;
-  @if(type-of($size) == number) {
+
+  @if (meta.type-of($size) == number) {
     $result: $size;
   } @else {
     @each $key, $value in bp.$mq-breakpoints {
@@ -11,9 +13,11 @@
       }
     }
   }
-  @if($width == min) {
-    $result: $result + 1;
+
+  @if ($width == max) {
+    $result: $result - 0.2;
   }
+
   @media print, screen and (#{$width}-width: #{$result}) {
     @content;
   }

@@ -21,11 +21,11 @@ body {
   font-size: rem(16px);
   font-feature-settings: "palt" 1;
 
-  @include mix.mq("md") {
+  @include mix.mq("md", max) {
     font-size: rem(15px);
   }
 
-  @include mix.mq("sm") {
+  @include mix.mq("sm", max) {
     font-size: rem(14px);
   }
 }

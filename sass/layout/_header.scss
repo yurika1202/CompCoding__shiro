@@ -1,2 +1,18 @@
-@use "../variables/" as var;
+@use "sass:math";
+@use "../functions/" as *;
 @use "../mixins/" as mix;
+@use "../variables/" as var;
+
+.ly_header {
+    width: calc(math.div(var.$width-pc, 1280px) * 100%);
+    max-width: var.$width-pc;
+    padding-top: 40px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.ly_header_inner {
+    @include mix.flex();
+}

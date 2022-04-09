@@ -1,45 +1,6 @@
-// flex
-// --------------------------------------------------------------------------
-@mixin mix_flexBase {
+@mixin flex($justify:space-between, $align:center) {
   display: flex;
   flex-wrap: wrap;
-}
-
-@mixin mix_flexBase_start {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-@mixin mix_flexBase_end {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-@mixin mix_flexBase_center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-@mixin mix_flexBase_between {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-@mixin mix_flexBase_around {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-@mixin mix_flexBase_allCenter {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
+  justify-content: $justify;
+  align-items: $align;
 }

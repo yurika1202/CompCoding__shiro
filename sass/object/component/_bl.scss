@@ -1,37 +1,6 @@
 @use "../../variables/" as var;
 @use "../../mixins/" as mix;
 
-// bl_flexBase
-// --------------------------------------------------------------------------
-
-.bl_flexBase {
-  @include mix.mix_flexBase;
-
-  &_start {
-    @include mix.mix_flexBase_start;
-  }
-
-  &_end {
-    @include mix.mix_flexBase_end;
-  }
-
-  &_center {
-    @include mix.mix_flexBase_center;
-  }
-
-  &_between {
-    @include mix.mix_flexBase_between;
-  }
-
-  &_around {
-    @include mix.mix_flexBase_around;
-  }
-
-  &_allCenter {
-    @include mix.mix_flexBase_allCenter;
-  }
-}
-
 // bl_width_100per
 // --------------------------------------------------------------------------
 
