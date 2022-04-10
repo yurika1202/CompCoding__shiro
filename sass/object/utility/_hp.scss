@@ -1,9 +1,19 @@
+@use "../../functions/" as *;
 @use "../../variables/" as var;
 @use "../../mixins/" as mix;
 
-// hp_display
+// background color
 // ----------------------------------------------------------------
+.hp_bgcBtm {
+  background: linear-gradient(180deg, transparent 0%, transparent 70%, colors(color-block-background) 70%, colors(color-block-background) 100%);
 
+  &__rev {
+    background: linear-gradient(180deg, colors(color-block-background) 0%, colors(color-block-background) 60%, transparent 60%, transparent 100%);
+  }
+}
+
+// display
+// ----------------------------------------------------------------
 .hp_pcNoDisplay {
   @include mix.mq(xl, min) {
     display: none;

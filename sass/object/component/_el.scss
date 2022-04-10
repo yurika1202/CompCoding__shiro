@@ -38,6 +38,14 @@
     }
 }
 
+.el_lv3Heading {
+    font-family: font-family(font-heading);
+    font-weight: bold;
+    font-size: rem(24px);
+    color: colors(color-headingLv3-text);
+    line-height: 1.666;
+}
+
 // btn
 // --------------------------------------------------------------------------
 .el_btn {

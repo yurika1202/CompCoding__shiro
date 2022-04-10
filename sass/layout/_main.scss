@@ -2,9 +2,3 @@
 @use "../functions/" as *;
 @use "../mixins/" as mix;
 @use "../variables/" as var;
-
-.ly_main_inner {
-    width: calc(math.div(var.$width-pc, 1280px) * 100%);
-    max-width: var.$width-pc;
-    margin: 0 auto;
-}

@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../../functions/" as *;
 @use "../../variables/" as var;
 @use "../../mixins/" as mix;
@@ -13,10 +14,6 @@
     padding-bottom: 40px;
   }
 
-  &__pb60 {
-    padding-bottom: 60px;
-  }
-
   &__pb100 {
     padding-bottom: 100px;
   }
@@ -30,13 +27,71 @@
   padding: 32px 0 40px;
 }
 
-// mix_cardUnit
-// @include mix_cardUnit(カラム数,縦軸の余白,左右の余白);
-// 例：mix_cardUnit(3,30px,4%);
-// 例：class="bl_cardUnit bl_cardUnit__col4"
+// cardUnit
 // ----------------------------------------------------------------
 .bl_cardUnit {
-  @include mix.mix_cardUnit(4, 20px, 3%);
+  @include mix.flex($align: flex-start);
+
+  &__col2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    height: 1500px;
+
+    li {
+      width: calc(math.div(420px, var.$width-pc) * 100%);
+
+      &:nth-of-type(1) {
+        order: 1;
+      }
+
+      &:nth-of-type(2) {
+        order: 3;
+        margin-top: 120px;
+      }
+
+      &:nth-of-type(3) {
+        order: 2;
+        margin-top: 80px;
+      }
+
+      &:nth-of-type(4) {
+        order: 4;
+        margin-top: 80px;
+      }
+    }
+  }
+
+  &__col3 {
+    li {
+      width: math.div(100%, 3);
+
+      &:not(:first-of-type) {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+
+// card
+// --------------------------------------------------------------------------
+.bl_card {
+
+}
+
+.bl_card_imgWrapper {
+
+}
+
+.bl_card_body {
+  margin-top: 12px;
+  text-align: left;
+}
+
+.bl_card_txt {
+  line-height: 1.5;
 }
 
 // width_100per
@@ -75,14 +130,6 @@
 
 // header
 // --------------------------------------------------------------------------
-.bl_header_logo {
-
-}
-
-.bl_headerNav {
-
-}
-
 .bl_headerNav_btn {
   width: 36px;
   height: 19px;
@@ -107,6 +154,55 @@
 
     &:nth-of-type(3) {
       bottom: 0;
+    }
+  }
+}
+
+// media
+// --------------------------------------------------------------------------
+.bl_media {
+  @include mix.flex();
+}
+
+.bl_media_imgWrapper {
+  flex: 0 1 50%;
+  max-width: 480px;
+}
+
+.bl_media_body {
+  flex: 1 1 auto;
+  margin-left: 48px;
+}
+
+// horizTable
+// --------------------------------------------------------------------------
+.bl_horizTable {
+  text-align: left;
+  padding-left: 38px;
+
+  > table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px 12px;
+
+    th {
+      vertical-align: top;
+    }
+
+    td {
+      padding: 0 0 19px 33px;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 1px;
+        height: 100%;
+        background: colors(color-table-border);
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translateY(-50%);
+      }
     }
   }
 }
